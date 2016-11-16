@@ -6,7 +6,7 @@
 	+ 数据库支持：Oracle、MySQL、SQLite；</br></br>
 	
 + 启动工程：
-	+ [web.xml]文件当中的[spring.profiles.default]()可切换系统环境，选development是以开发环境启动，选production则是生产环境启动；
+	+ <font color="blue">web.xml</font>文件当中的[spring.profiles.default]()可切换系统环境，选development是以开发环境启动，选production则是生产环境启动；
 	+ 数据库选择，默认开启SQLite数据库，若改用Oracle或SQLite，可在工程的[config-datasource.properties]()数据源配置文件当中设置，按启动的是开发环境还是生产环境来选择数据源配置文件；
 	+ 若采用的是SQLite数据库，本步骤可跳过，初始化数据可查看[InitServiceTest]()类中的Junit方法，注意下单元测试类当中[@ActiveProfiles("")]()，请指定相应的环境；
 	+ 如若启动[memcached、solr、redis]()，修改[web.xml]()文件当中spring配置文件加载项；
